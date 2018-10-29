@@ -33,7 +33,13 @@ public class Teste {
 		professorTeste.setNota(alunos.get(0), 0, 9.5);
 		
 		System.out.println(alunos.get(0).imprimirNotas());
+		
+		professorTeste.setNota(turmaTeste.acessarAluno(turmaTeste.buscarAluno("Henrique")), 1, 5);
+		
+		System.out.println(alunos.get(1).imprimirNotas());
 
 	}
+	
+	
 
 }

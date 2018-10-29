@@ -19,6 +19,56 @@ public class Professor {
 
 
 
+	@SuppressWarnings("unused")
+	private String getSenha() {
+		return senha;
+	}
+
+
+
+	@SuppressWarnings("unused")
+	private void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+
+
+	public String getNome() {
+		return nome;
+	}
+
+
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+
+
+	public String getLogin() {
+		return login;
+	}
+
+
+
+	public void setLogin(String login) {
+		this.login = login;
+	}
+
+
+
+	public String getDisciplina() {
+		return disciplina;
+	}
+
+
+
+	public void setDisciplina(String disciplina) {
+		this.disciplina = disciplina;
+	}
+
+
+
 	//Pega a posicao da disciplina no arrayList de notas do aluno e muda a nota da unidade passada como parametro para a nota passada como parametro
 	public void setNota(Aluno aluno, int unidade, double nota) {
 		int aux = aluno.buscarPosDisciplina(disciplina);

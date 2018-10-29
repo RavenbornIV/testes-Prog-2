@@ -16,11 +16,9 @@ public class Turma {
 		this.disciplinas = new ArrayList<Disciplina>(disciplinas);
 		
 		
-		
-		
 	}
 	
-	public String getAlunos() {
+	public String imprimirAlunos() {
 		String imprimir = "";
 		
 		for(int i = 0; i < alunos.size(); i++) {
@@ -31,6 +29,18 @@ public class Turma {
 		
 	}
 	
+	public int buscarAluno(String nomeAluno) {
+		for(int i = 0; i < alunos.size(); i++) {
+			if(nomeAluno.equals(alunos.get(i).getNome())) {
+				return i;
+			}
+		}
+		return -1;
+	}
+	
+	public Aluno acessarAluno(int posicao) {
+		return this.alunos.get(posicao);
+	}
 	
 	
 

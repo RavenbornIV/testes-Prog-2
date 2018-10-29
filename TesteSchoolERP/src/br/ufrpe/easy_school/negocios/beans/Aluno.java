@@ -25,11 +25,13 @@ public class Aluno {
 	}
 	
 	
+	@SuppressWarnings("unused")
 	private String getSenha() {
 		return senha;
 	}
 
 
+	@SuppressWarnings("unused")
 	private void setSenha(String senha) {
 		this.senha = senha;
 	}
